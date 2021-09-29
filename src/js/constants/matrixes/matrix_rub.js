@@ -1,4 +1,4 @@
-export const MATRIX_RUB = {
+  export const MATRIX_RUB = {
   "a.1": {
     shares: [50, 40],
     portfolios: [
