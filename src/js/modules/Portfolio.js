@@ -124,20 +124,22 @@ export default class Portfolio {
 
   _selectSecurities(key, portfolioMatrix) {
     // get all options with corresponding key
-    // console.log(key.substring(1, 4));
+    console.log(key.substring(1, 4));
 
     const portfolioOption = portfolioMatrix[key.substring(1, 4)];
 
-    // console.log(portfolioOption);
+    if (!portfolioOption) return null;
+
+    console.log(portfolioOption);
 
     // select one random option from portfolioOption
-    // console.log(portfolioOption);
+
     const portfolioSelection =
       portfolioOption.portfolios[
         Math.floor(Math.random() * portfolioOption.portfolios.length)
       ];
 
-    // console.log(portfolioSelection);
+    console.log(portfolioSelection);
 
     // select option with corresponding risk profile (number)
     const selectedCatalogueCode = portfolioSelection[key.charAt(0) - 1];
